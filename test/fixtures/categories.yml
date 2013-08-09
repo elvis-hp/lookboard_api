@@ -1,0 +1,51 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  CategoryID: 1
+  CategoryName: MyString
+  Ranking: 1
+  ParentID: 1
+  HasChildren: 
+  Status: 1
+  Description: MyString
+  LanguageID: 1
+  Icon: MyString
+  HasDeal: 1
+  Seourl: MyString
+  Title: MyString
+  DescriptionTag: MyText
+  Manufacturer: MyString
+  MetaKeywords: MyString
+  MetaPageTopic: MyString
+  MetaGeoRegion: MyString
+  MetaGeoPlaceName: MyString
+  DescriptionMain: MyString
+  TitleP: MyString
+  DescriptionMainP: MyString
+  FromUser: 1
+  updatedtime: 2013-08-08 16:50:42
+
+two:
+  CategoryID: 1
+  CategoryName: MyString
+  Ranking: 1
+  ParentID: 1
+  HasChildren: 
+  Status: 1
+  Description: MyString
+  LanguageID: 1
+  Icon: MyString
+  HasDeal: 1
+  Seourl: MyString
+  Title: MyString
+  DescriptionTag: MyText
+  Manufacturer: MyString
+  MetaKeywords: MyString
+  MetaPageTopic: MyString
+  MetaGeoRegion: MyString
+  MetaGeoPlaceName: MyString
+  DescriptionMain: MyString
+  TitleP: MyString
+  DescriptionMainP: MyString
+  FromUser: 1
+  updatedtime: 2013-08-08 16:50:42
