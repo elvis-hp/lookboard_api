@@ -1,0 +1,67 @@
+<h1>Listing categories</h1>
+
+<table>
+  <tr>
+    <th>Categoryid</th>
+    <th>Categoryname</th>
+    <th>Ranking</th>
+    <th>Parentid</th>
+    <th>Haschildren</th>
+    <th>Status</th>
+    <th>Description</th>
+    <th>Languageid</th>
+    <th>Icon</th>
+    <th>Hasdeal</th>
+    <th>Seourl</th>
+    <th>Title</th>
+    <th>Descriptiontag</th>
+    <th>Manufacturer</th>
+    <th>Metakeywords</th>
+    <th>Metapagetopic</th>
+    <th>Metageoregion</th>
+    <th>Metageoplacename</th>
+    <th>Descriptionmain</th>
+    <th>Titlep</th>
+    <th>Descriptionmainp</th>
+    <th>Fromuser</th>
+    <th>Updatedtime</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @categories.each do |category| %>
+  <tr>
+    <td><%= category.CategoryID %></td>
+    <td><%= category.CategoryName %></td>
+    <td><%= category.Ranking %></td>
+    <td><%= category.ParentID %></td>
+    <td><%= category.HasChildren %></td>
+    <td><%= category.Status %></td>
+    <td><%= category.Description %></td>
+    <td><%= category.LanguageID %></td>
+    <td><%= category.Icon %></td>
+    <td><%= category.HasDeal %></td>
+    <td><%= category.Seourl %></td>
+    <td><%= category.Title %></td>
+    <td><%= category.DescriptionTag %></td>
+    <td><%= category.Manufacturer %></td>
+    <td><%= category.MetaKeywords %></td>
+    <td><%= category.MetaPageTopic %></td>
+    <td><%= category.MetaGeoRegion %></td>
+    <td><%= category.MetaGeoPlaceName %></td>
+    <td><%= category.DescriptionMain %></td>
+    <td><%= category.TitleP %></td>
+    <td><%= category.DescriptionMainP %></td>
+    <td><%= category.FromUser %></td>
+    <td><%= category.updatedtime %></td>
+    <td><%= link_to 'Show', category %></td>
+    <td><%= link_to 'Edit', edit_category_path(category) %></td>
+    <td><%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Category', new_category_path %>

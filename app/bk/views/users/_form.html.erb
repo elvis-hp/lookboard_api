@@ -1,0 +1,281 @@
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :user_id %><br />
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :user_name %><br />
+    <%= f.text_field :user_name %>
+  </div>
+  <div class="field">
+    <%= f.label :user_email %><br />
+    <%= f.text_field :user_email %>
+  </div>
+  <div class="field">
+    <%= f.label :user_avatar %><br />
+    <%= f.text_area :user_avatar %>
+  </div>
+  <div class="field">
+    <%= f.label :user_cover_image %><br />
+    <%= f.text_field :user_cover_image %>
+  </div>
+  <div class="field">
+    <%= f.label :user_full_name %><br />
+    <%= f.text_field :user_full_name %>
+  </div>
+  <div class="field">
+    <%= f.label :user_birthday %><br />
+    <%= f.date_select :user_birthday %>
+  </div>
+  <div class="field">
+    <%= f.label :user_pass %><br />
+    <%= f.text_field :user_pass %>
+  </div>
+  <div class="field">
+    <%= f.label :user_street %><br />
+    <%= f.text_field :user_street %>
+  </div>
+  <div class="field">
+    <%= f.label :user_city %><br />
+    <%= f.text_field :user_city %>
+  </div>
+  <div class="field">
+    <%= f.label :user_state %><br />
+    <%= f.text_field :user_state %>
+  </div>
+  <div class="field">
+    <%= f.label :user_zip %><br />
+    <%= f.text_field :user_zip %>
+  </div>
+  <div class="field">
+    <%= f.label :user_country %><br />
+    <%= f.text_field :user_country %>
+  </div>
+  <div class="field">
+    <%= f.label :user_phone %><br />
+    <%= f.text_field :user_phone %>
+  </div>
+  <div class="field">
+    <%= f.label :user_company %><br />
+    <%= f.text_field :user_company %>
+  </div>
+  <div class="field">
+    <%= f.label :user_fax %><br />
+    <%= f.text_field :user_fax %>
+  </div>
+  <div class="field">
+    <%= f.label :user_url %><br />
+    <%= f.text_field :user_url %>
+  </div>
+  <div class="field">
+    <%= f.label :long %><br />
+    <%= f.text_field :long %>
+  </div>
+  <div class="field">
+    <%= f.label :lat %><br />
+    <%= f.text_field :lat %>
+  </div>
+  <div class="field">
+    <%= f.label :formataddress %><br />
+    <%= f.text_field :formataddress %>
+  </div>
+  <div class="field">
+    <%= f.label :user_note %><br />
+    <%= f.text_field :user_note %>
+  </div>
+  <div class="field">
+    <%= f.label :fb_id %><br />
+    <%= f.text_field :fb_id %>
+  </div>
+  <div class="field">
+    <%= f.label :from_source_ads %><br />
+    <%= f.text_field :from_source_ads %>
+  </div>
+  <div class="field">
+    <%= f.label :fb_access_key %><br />
+    <%= f.text_field :fb_access_key %>
+  </div>
+  <div class="field">
+    <%= f.label :linkedin_id %><br />
+    <%= f.text_field :linkedin_id %>
+  </div>
+  <div class="field">
+    <%= f.label :user_created_time %><br />
+    <%= f.datetime_select :user_created_time %>
+  </div>
+  <div class="field">
+    <%= f.label :user_bucks %><br />
+    <%= f.text_field :user_bucks %>
+  </div>
+  <div class="field">
+    <%= f.label :user_free_buck %><br />
+    <%= f.text_field :user_free_buck %>
+  </div>
+  <div class="field">
+    <%= f.label :user_rf_from %><br />
+    <%= f.text_field :user_rf_from %>
+  </div>
+  <div class="field">
+    <%= f.label :earnbyfb %><br />
+    <%= f.check_box :earnbyfb %>
+  </div>
+  <div class="field">
+    <%= f.label :earnbytw %><br />
+    <%= f.check_box :earnbytw %>
+  </div>
+  <div class="field">
+    <%= f.label :earnbyfollow %><br />
+    <%= f.number_field :earnbyfollow %>
+  </div>
+  <div class="field">
+    <%= f.label :oauth_token %><br />
+    <%= f.text_field :oauth_token %>
+  </div>
+  <div class="field">
+    <%= f.label :oauth_token_secret %><br />
+    <%= f.text_field :oauth_token_secret %>
+  </div>
+  <div class="field">
+    <%= f.label :tw_id %><br />
+    <%= f.text_field :tw_id %>
+  </div>
+  <div class="field">
+    <%= f.label :tw_name %><br />
+    <%= f.text_field :tw_name %>
+  </div>
+  <div class="field">
+    <%= f.label :ip %><br />
+    <%= f.text_field :ip %>
+  </div>
+  <div class="field">
+    <%= f.label :user_type %><br />
+    <%= f.number_field :user_type %>
+  </div>
+  <div class="field">
+    <%= f.label :isFeature %><br />
+    <%= f.number_field :isFeature %>
+  </div>
+  <div class="field">
+    <%= f.label :business_name %><br />
+    <%= f.text_field :business_name %>
+  </div>
+  <div class="field">
+    <%= f.label :tax_id %><br />
+    <%= f.text_field :tax_id %>
+  </div>
+  <div class="field">
+    <%= f.label :user_company_address %><br />
+    <%= f.text_field :user_company_address %>
+  </div>
+  <div class="field">
+    <%= f.label :user_company_city %><br />
+    <%= f.text_field :user_company_city %>
+  </div>
+  <div class="field">
+    <%= f.label :user_company_state %><br />
+    <%= f.text_field :user_company_state %>
+  </div>
+  <div class="field">
+    <%= f.label :user_company_zip %><br />
+    <%= f.text_field :user_company_zip %>
+  </div>
+  <div class="field">
+    <%= f.label :user_company_country %><br />
+    <%= f.text_field :user_company_country %>
+  </div>
+  <div class="field">
+    <%= f.label :user_warehouse_address %><br />
+    <%= f.text_field :user_warehouse_address %>
+  </div>
+  <div class="field">
+    <%= f.label :user_warehouse_city %><br />
+    <%= f.text_field :user_warehouse_city %>
+  </div>
+  <div class="field">
+    <%= f.label :user_warehouse_state %><br />
+    <%= f.text_field :user_warehouse_state %>
+  </div>
+  <div class="field">
+    <%= f.label :user_warehouse_zip %><br />
+    <%= f.text_field :user_warehouse_zip %>
+  </div>
+  <div class="field">
+    <%= f.label :user_warehouse_country %><br />
+    <%= f.text_field :user_warehouse_country %>
+  </div>
+  <div class="field">
+    <%= f.label :user_shipping_lead_time %><br />
+    <%= f.number_field :user_shipping_lead_time %>
+  </div>
+  <div class="field">
+    <%= f.label :user_have_dropship %><br />
+    <%= f.number_field :user_have_dropship %>
+  </div>
+  <div class="field">
+    <%= f.label :user_provide_inventory_updates %><br />
+    <%= f.text_field :user_provide_inventory_updates %>
+  </div>
+  <div class="field">
+    <%= f.label :user_is_a %><br />
+    <%= f.text_field :user_is_a %>
+  </div>
+  <div class="field">
+    <%= f.label :user_target_price_range %><br />
+    <%= f.text_field :user_target_price_range %>
+  </div>
+  <div class="field">
+    <%= f.label :user_looking_for %><br />
+    <%= f.text_field :user_looking_for %>
+  </div>
+  <div class="field">
+    <%= f.label :user_job_title %><br />
+    <%= f.text_field :user_job_title %>
+  </div>
+  <div class="field">
+    <%= f.label :user_about_you %><br />
+    <%= f.text_area :user_about_you %>
+  </div>
+  <div class="field">
+    <%= f.label :send_mail_claim %><br />
+    <%= f.number_field :send_mail_claim %>
+  </div>
+  <div class="field">
+    <%= f.label :time_send_mail_claim %><br />
+    <%= f.datetime_select :time_send_mail_claim %>
+  </div>
+  <div class="field">
+    <%= f.label :store_active %><br />
+    <%= f.check_box :store_active %>
+  </div>
+  <div class="field">
+    <%= f.label :store_name %><br />
+    <%= f.text_field :store_name %>
+  </div>
+  <div class="field">
+    <%= f.label :store_description %><br />
+    <%= f.text_area :store_description %>
+  </div>
+  <div class="field">
+    <%= f.label :store_avatar %><br />
+    <%= f.text_field :store_avatar %>
+  </div>
+  <div class="field">
+    <%= f.label :store_cover_image %><br />
+    <%= f.text_field :store_cover_image %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

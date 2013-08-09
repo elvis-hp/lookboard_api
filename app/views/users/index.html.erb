@@ -1,0 +1,153 @@
+<h1>Listing users</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>User name</th>
+    <th>User email</th>
+    <th>User avatar</th>
+    <th>User cover image</th>
+    <th>User full name</th>
+    <th>User birthday</th>
+    <th>User pass</th>
+    <th>User street</th>
+    <th>User city</th>
+    <th>User state</th>
+    <th>User zip</th>
+    <th>User country</th>
+    <th>User phone</th>
+    <th>User company</th>
+    <th>User fax</th>
+    <th>User url</th>
+    <th>Long</th>
+    <th>Lat</th>
+    <th>Formataddress</th>
+    <th>User note</th>
+    <th>Fb</th>
+    <th>From source ads</th>
+    <th>Fb access key</th>
+    <th>Linkedin</th>
+    <th>User created time</th>
+    <th>User bucks</th>
+    <th>User free buck</th>
+    <th>User rf from</th>
+    <th>Earnbyfb</th>
+    <th>Earnbytw</th>
+    <th>Earnbyfollow</th>
+    <th>Oauth token</th>
+    <th>Oauth token secret</th>
+    <th>Tw</th>
+    <th>Tw name</th>
+    <th>Ip</th>
+    <th>User type</th>
+    <th>Isfeature</th>
+    <th>Business name</th>
+    <th>Tax</th>
+    <th>User company address</th>
+    <th>User company city</th>
+    <th>User company state</th>
+    <th>User company zip</th>
+    <th>User company country</th>
+    <th>User warehouse address</th>
+    <th>User warehouse city</th>
+    <th>User warehouse state</th>
+    <th>User warehouse zip</th>
+    <th>User warehouse country</th>
+    <th>User shipping lead time</th>
+    <th>User have dropship</th>
+    <th>User provide inventory updates</th>
+    <th>User is a</th>
+    <th>User target price range</th>
+    <th>User looking for</th>
+    <th>User job title</th>
+    <th>User about you</th>
+    <th>Send mail claim</th>
+    <th>Time send mail claim</th>
+    <th>Store active</th>
+    <th>Store name</th>
+    <th>Store description</th>
+    <th>Store avatar</th>
+    <th>Store cover image</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%= user.user_id %></td>
+    <td><%= user.user_name %></td>
+    <td><%= user.user_email %></td>
+    <td><%= user.user_avatar %></td>
+    <td><%= user.user_cover_image %></td>
+    <td><%= user.user_full_name %></td>
+    <td><%= user.user_birthday %></td>
+    <td><%= user.user_pass %></td>
+    <td><%= user.user_street %></td>
+    <td><%= user.user_city %></td>
+    <td><%= user.user_state %></td>
+    <td><%= user.user_zip %></td>
+    <td><%= user.user_country %></td>
+    <td><%= user.user_phone %></td>
+    <td><%= user.user_company %></td>
+    <td><%= user.user_fax %></td>
+    <td><%= user.user_url %></td>
+    <td><%= user.long %></td>
+    <td><%= user.lat %></td>
+    <td><%= user.formataddress %></td>
+    <td><%= user.user_note %></td>
+    <td><%= user.fb_id %></td>
+    <td><%= user.from_source_ads %></td>
+    <td><%= user.fb_access_key %></td>
+    <td><%= user.linkedin_id %></td>
+    <td><%= user.user_created_time %></td>
+    <td><%= user.user_bucks %></td>
+    <td><%= user.user_free_buck %></td>
+    <td><%= user.user_rf_from %></td>
+    <td><%= user.earnbyfb %></td>
+    <td><%= user.earnbytw %></td>
+    <td><%= user.earnbyfollow %></td>
+    <td><%= user.oauth_token %></td>
+    <td><%= user.oauth_token_secret %></td>
+    <td><%= user.tw_id %></td>
+    <td><%= user.tw_name %></td>
+    <td><%= user.ip %></td>
+    <td><%= user.user_type %></td>
+    <td><%= user.isFeature %></td>
+    <td><%= user.business_name %></td>
+    <td><%= user.tax_id %></td>
+    <td><%= user.user_company_address %></td>
+    <td><%= user.user_company_city %></td>
+    <td><%= user.user_company_state %></td>
+    <td><%= user.user_company_zip %></td>
+    <td><%= user.user_company_country %></td>
+    <td><%= user.user_warehouse_address %></td>
+    <td><%= user.user_warehouse_city %></td>
+    <td><%= user.user_warehouse_state %></td>
+    <td><%= user.user_warehouse_zip %></td>
+    <td><%= user.user_warehouse_country %></td>
+    <td><%= user.user_shipping_lead_time %></td>
+    <td><%= user.user_have_dropship %></td>
+    <td><%= user.user_provide_inventory_updates %></td>
+    <td><%= user.user_is_a %></td>
+    <td><%= user.user_target_price_range %></td>
+    <td><%= user.user_looking_for %></td>
+    <td><%= user.user_job_title %></td>
+    <td><%= user.user_about_you %></td>
+    <td><%= user.send_mail_claim %></td>
+    <td><%= user.time_send_mail_claim %></td>
+    <td><%= user.store_active %></td>
+    <td><%= user.store_name %></td>
+    <td><%= user.store_description %></td>
+    <td><%= user.store_avatar %></td>
+    <td><%= user.store_cover_image %></td>
+    <td><%= link_to 'Show', user %></td>
+    <td><%= link_to 'Edit', edit_user_path(user) %></td>
+    <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New User', new_user_path %>

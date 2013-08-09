@@ -1,0 +1,109 @@
+<%= form_for(@category) do |f| %>
+  <% if @category.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@category.errors.count, "error") %> prohibited this category from being saved:</h2>
+
+      <ul>
+      <% @category.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :CategoryID %><br />
+    <%= f.number_field :CategoryID %>
+  </div>
+  <div class="field">
+    <%= f.label :CategoryName %><br />
+    <%= f.text_field :CategoryName %>
+  </div>
+  <div class="field">
+    <%= f.label :Ranking %><br />
+    <%= f.number_field :Ranking %>
+  </div>
+  <div class="field">
+    <%= f.label :ParentID %><br />
+    <%= f.number_field :ParentID %>
+  </div>
+  <div class="field">
+    <%= f.label :HasChildren %><br />
+    <%= f.text_field :HasChildren %>
+  </div>
+  <div class="field">
+    <%= f.label :Status %><br />
+    <%= f.number_field :Status %>
+  </div>
+  <div class="field">
+    <%= f.label :Description %><br />
+    <%= f.text_field :Description %>
+  </div>
+  <div class="field">
+    <%= f.label :LanguageID %><br />
+    <%= f.number_field :LanguageID %>
+  </div>
+  <div class="field">
+    <%= f.label :Icon %><br />
+    <%= f.text_field :Icon %>
+  </div>
+  <div class="field">
+    <%= f.label :HasDeal %><br />
+    <%= f.number_field :HasDeal %>
+  </div>
+  <div class="field">
+    <%= f.label :Seourl %><br />
+    <%= f.text_field :Seourl %>
+  </div>
+  <div class="field">
+    <%= f.label :Title %><br />
+    <%= f.text_field :Title %>
+  </div>
+  <div class="field">
+    <%= f.label :DescriptionTag %><br />
+    <%= f.text_area :DescriptionTag %>
+  </div>
+  <div class="field">
+    <%= f.label :Manufacturer %><br />
+    <%= f.text_field :Manufacturer %>
+  </div>
+  <div class="field">
+    <%= f.label :MetaKeywords %><br />
+    <%= f.text_field :MetaKeywords %>
+  </div>
+  <div class="field">
+    <%= f.label :MetaPageTopic %><br />
+    <%= f.text_field :MetaPageTopic %>
+  </div>
+  <div class="field">
+    <%= f.label :MetaGeoRegion %><br />
+    <%= f.text_field :MetaGeoRegion %>
+  </div>
+  <div class="field">
+    <%= f.label :MetaGeoPlaceName %><br />
+    <%= f.text_field :MetaGeoPlaceName %>
+  </div>
+  <div class="field">
+    <%= f.label :DescriptionMain %><br />
+    <%= f.text_field :DescriptionMain %>
+  </div>
+  <div class="field">
+    <%= f.label :TitleP %><br />
+    <%= f.text_field :TitleP %>
+  </div>
+  <div class="field">
+    <%= f.label :DescriptionMainP %><br />
+    <%= f.text_field :DescriptionMainP %>
+  </div>
+  <div class="field">
+    <%= f.label :FromUser %><br />
+    <%= f.number_field :FromUser %>
+  </div>
+  <div class="field">
+    <%= f.label :updatedtime %><br />
+    <%= f.datetime_select :updatedtime %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,217 @@
+<%= form_for(@supplier) do |f| %>
+  <% if @supplier.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@supplier.errors.count, "error") %> prohibited this supplier from being saved:</h2>
+
+      <ul>
+      <% @supplier.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :SupplierID %><br />
+    <%= f.number_field :SupplierID %>
+  </div>
+  <div class="field">
+    <%= f.label :SaleEvent_Name %><br />
+    <%= f.text_field :SaleEvent_Name %>
+  </div>
+  <div class="field">
+    <%= f.label :SaleEvent_Intro %><br />
+    <%= f.text_field :SaleEvent_Intro %>
+  </div>
+  <div class="field">
+    <%= f.label :Supplier_description %><br />
+    <%= f.text_field :Supplier_description %>
+  </div>
+  <div class="field">
+    <%= f.label :Supplier %><br />
+    <%= f.text_field :Supplier %>
+  </div>
+  <div class="field">
+    <%= f.label :SaleEvent_Description %><br />
+    <%= f.text_field :SaleEvent_Description %>
+  </div>
+  <div class="field">
+    <%= f.label :Contact %><br />
+    <%= f.text_field :Contact %>
+  </div>
+  <div class="field">
+    <%= f.label :Street %><br />
+    <%= f.text_field :Street %>
+  </div>
+  <div class="field">
+    <%= f.label :Street2 %><br />
+    <%= f.text_field :Street2 %>
+  </div>
+  <div class="field">
+    <%= f.label :City %><br />
+    <%= f.text_field :City %>
+  </div>
+  <div class="field">
+    <%= f.label :State %><br />
+    <%= f.text_field :State %>
+  </div>
+  <div class="field">
+    <%= f.label :Zip %><br />
+    <%= f.text_field :Zip %>
+  </div>
+  <div class="field">
+    <%= f.label :Country %><br />
+    <%= f.text_field :Country %>
+  </div>
+  <div class="field">
+    <%= f.label :Phone %><br />
+    <%= f.text_field :Phone %>
+  </div>
+  <div class="field">
+    <%= f.label :Fax %><br />
+    <%= f.text_field :Fax %>
+  </div>
+  <div class="field">
+    <%= f.label :Email %><br />
+    <%= f.text_field :Email %>
+  </div>
+  <div class="field">
+    <%= f.label :URL %><br />
+    <%= f.text_field :URL %>
+  </div>
+  <div class="field">
+    <%= f.label :SendMethod %><br />
+    <%= f.text_field :SendMethod %>
+  </div>
+  <div class="field">
+    <%= f.label :SendGroup %><br />
+    <%= f.text_field :SendGroup %>
+  </div>
+  <div class="field">
+    <%= f.label :SendTemplate %><br />
+    <%= f.text_field :SendTemplate %>
+  </div>
+  <div class="field">
+    <%= f.label :SendShip %><br />
+    <%= f.text_field :SendShip %>
+  </div>
+  <div class="field">
+    <%= f.label :Suffix %><br />
+    <%= f.text_field :Suffix %>
+  </div>
+  <div class="field">
+    <%= f.label :SuffixInd %><br />
+    <%= f.text_field :SuffixInd %>
+  </div>
+  <div class="field">
+    <%= f.label :long %><br />
+    <%= f.text_field :long %>
+  </div>
+  <div class="field">
+    <%= f.label :lat %><br />
+    <%= f.text_field :lat %>
+  </div>
+  <div class="field">
+    <%= f.label :formataddress %><br />
+    <%= f.text_field :formataddress %>
+  </div>
+  <div class="field">
+    <%= f.label :pickup %><br />
+    <%= f.number_field :pickup %>
+  </div>
+  <div class="field">
+    <%= f.label :SaleEvent_Title %><br />
+    <%= f.text_field :SaleEvent_Title %>
+  </div>
+  <div class="field">
+    <%= f.label :SaleEvent_Text %><br />
+    <%= f.text_field :SaleEvent_Text %>
+  </div>
+  <div class="field">
+    <%= f.label :SaleEvent_QuoteText %><br />
+    <%= f.text_field :SaleEvent_QuoteText %>
+  </div>
+  <div class="field">
+    <%= f.label :SaleEvent_Quotename %><br />
+    <%= f.text_field :SaleEvent_Quotename %>
+  </div>
+  <div class="field">
+    <%= f.label :SaleEvent_Avatar %><br />
+    <%= f.text_field :SaleEvent_Avatar %>
+  </div>
+  <div class="field">
+    <%= f.label :SaleEvent_Image %><br />
+    <%= f.text_field :SaleEvent_Image %>
+  </div>
+  <div class="field">
+    <%= f.label :SaleEvent_Thumb %><br />
+    <%= f.text_field :SaleEvent_Thumb %>
+  </div>
+  <div class="field">
+    <%= f.label :updatenow %><br />
+    <%= f.number_field :updatenow %>
+  </div>
+  <div class="field">
+    <%= f.label :updatedtime %><br />
+    <%= f.datetime_select :updatedtime %>
+  </div>
+  <div class="field">
+    <%= f.label :isfeature %><br />
+    <%= f.number_field :isfeature %>
+  </div>
+  <div class="field">
+    <%= f.label :payment_method %><br />
+    <%= f.text_field :payment_method %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br />
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :Price %><br />
+    <%= f.text_field :Price %>
+  </div>
+  <div class="field">
+    <%= f.label :Design %><br />
+    <%= f.text_field :Design %>
+  </div>
+  <div class="field">
+    <%= f.label :Inventory %><br />
+    <%= f.text_field :Inventory %>
+  </div>
+  <div class="field">
+    <%= f.label :Category %><br />
+    <%= f.text_area :Category %>
+  </div>
+  <div class="field">
+    <%= f.label :shipping_lead_time %><br />
+    <%= f.text_field :shipping_lead_time %>
+  </div>
+  <div class="field">
+    <%= f.label :sell_type %><br />
+    <%= f.text_field :sell_type %>
+  </div>
+  <div class="field">
+    <%= f.label :claimed %><br />
+    <%= f.number_field :claimed %>
+  </div>
+  <div class="field">
+    <%= f.label :Supplier_Note %><br />
+    <%= f.text_field :Supplier_Note %>
+  </div>
+  <div class="field">
+    <%= f.label :InternetExposure %><br />
+    <%= f.text_field :InternetExposure %>
+  </div>
+  <div class="field">
+    <%= f.label :InternetPresence %><br />
+    <%= f.text_field :InternetPresence %>
+  </div>
+  <div class="field">
+    <%= f.label :for_level %><br />
+    <%= f.text_field :for_level %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

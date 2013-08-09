@@ -1,0 +1,121 @@
+<h1>Listing suppliers</h1>
+
+<table>
+  <tr>
+    <th>Supplierid</th>
+    <th>Saleevent name</th>
+    <th>Saleevent intro</th>
+    <th>Supplier description</th>
+    <th>Supplier</th>
+    <th>Saleevent description</th>
+    <th>Contact</th>
+    <th>Street</th>
+    <th>Street2</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Zip</th>
+    <th>Country</th>
+    <th>Phone</th>
+    <th>Fax</th>
+    <th>Email</th>
+    <th>Url</th>
+    <th>Sendmethod</th>
+    <th>Sendgroup</th>
+    <th>Sendtemplate</th>
+    <th>Sendship</th>
+    <th>Suffix</th>
+    <th>Suffixind</th>
+    <th>Long</th>
+    <th>Lat</th>
+    <th>Formataddress</th>
+    <th>Pickup</th>
+    <th>Saleevent title</th>
+    <th>Saleevent text</th>
+    <th>Saleevent quotetext</th>
+    <th>Saleevent quotename</th>
+    <th>Saleevent avatar</th>
+    <th>Saleevent image</th>
+    <th>Saleevent thumb</th>
+    <th>Updatenow</th>
+    <th>Updatedtime</th>
+    <th>Isfeature</th>
+    <th>Payment method</th>
+    <th>User</th>
+    <th>Price</th>
+    <th>Design</th>
+    <th>Inventory</th>
+    <th>Category</th>
+    <th>Shipping lead time</th>
+    <th>Sell type</th>
+    <th>Claimed</th>
+    <th>Supplier note</th>
+    <th>Internetexposure</th>
+    <th>Internetpresence</th>
+    <th>For level</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @suppliers.each do |supplier| %>
+  <tr>
+    <td><%= supplier.SupplierID %></td>
+    <td><%= supplier.SaleEvent_Name %></td>
+    <td><%= supplier.SaleEvent_Intro %></td>
+    <td><%= supplier.Supplier_description %></td>
+    <td><%= supplier.Supplier %></td>
+    <td><%= supplier.SaleEvent_Description %></td>
+    <td><%= supplier.Contact %></td>
+    <td><%= supplier.Street %></td>
+    <td><%= supplier.Street2 %></td>
+    <td><%= supplier.City %></td>
+    <td><%= supplier.State %></td>
+    <td><%= supplier.Zip %></td>
+    <td><%= supplier.Country %></td>
+    <td><%= supplier.Phone %></td>
+    <td><%= supplier.Fax %></td>
+    <td><%= supplier.Email %></td>
+    <td><%= supplier.URL %></td>
+    <td><%= supplier.SendMethod %></td>
+    <td><%= supplier.SendGroup %></td>
+    <td><%= supplier.SendTemplate %></td>
+    <td><%= supplier.SendShip %></td>
+    <td><%= supplier.Suffix %></td>
+    <td><%= supplier.SuffixInd %></td>
+    <td><%= supplier.long %></td>
+    <td><%= supplier.lat %></td>
+    <td><%= supplier.formataddress %></td>
+    <td><%= supplier.pickup %></td>
+    <td><%= supplier.SaleEvent_Title %></td>
+    <td><%= supplier.SaleEvent_Text %></td>
+    <td><%= supplier.SaleEvent_QuoteText %></td>
+    <td><%= supplier.SaleEvent_Quotename %></td>
+    <td><%= supplier.SaleEvent_Avatar %></td>
+    <td><%= supplier.SaleEvent_Image %></td>
+    <td><%= supplier.SaleEvent_Thumb %></td>
+    <td><%= supplier.updatenow %></td>
+    <td><%= supplier.updatedtime %></td>
+    <td><%= supplier.isfeature %></td>
+    <td><%= supplier.payment_method %></td>
+    <td><%= supplier.user_id %></td>
+    <td><%= supplier.Price %></td>
+    <td><%= supplier.Design %></td>
+    <td><%= supplier.Inventory %></td>
+    <td><%= supplier.Category %></td>
+    <td><%= supplier.shipping_lead_time %></td>
+    <td><%= supplier.sell_type %></td>
+    <td><%= supplier.claimed %></td>
+    <td><%= supplier.Supplier_Note %></td>
+    <td><%= supplier.InternetExposure %></td>
+    <td><%= supplier.InternetPresence %></td>
+    <td><%= supplier.for_level %></td>
+    <td><%= link_to 'Show', supplier %></td>
+    <td><%= link_to 'Edit', edit_supplier_path(supplier) %></td>
+    <td><%= link_to 'Destroy', supplier, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Supplier', new_supplier_path %>
